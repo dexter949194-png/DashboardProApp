@@ -2,7 +2,7 @@
 
     <application
         android:allowBackup="true"
-        android:theme="@style/Theme.DashboardApp"
+        android:theme="@style/Theme.W9Dashboard"
         android:label="Dashboard PRO">
 
         <activity android:name=".MainActivity">
