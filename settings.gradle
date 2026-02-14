@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DashboardProApp"
 include(":app")
+
