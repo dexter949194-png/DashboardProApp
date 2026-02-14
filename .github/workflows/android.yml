@@ -1,8 +1,9 @@
-name: Android Build
+name: Android CI
 
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,12 +23,9 @@ jobs:
           wget https://services.gradle.org/distributions/gradle-8.2-bin.zip
           unzip gradle-8.2-bin.zip
           export PATH=$PATH:$PWD/gradle-8.2/bin
-          gradle -v
 
       - name: Build Debug APK
         run: gradle :app:assembleDebug
-
-
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
